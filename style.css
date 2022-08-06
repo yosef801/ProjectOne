@@ -1,5 +1,4 @@
 body {
-  width: 100%;
   text-align: center;
 }
 .pepe {
@@ -16,4 +15,21 @@ body {
 }
 .blac {
   background-color: #0d0d0d;
+}
+
+.pageTwo {
+  display: grid;
+}
+.carousel,
+.carousel-item img {
+  height: 500px;
+}
+@media only screen and (min-width: 800px) {
+  .cards {
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto auto auto;
+  }
+  .card {
+    width: 100% !important;
+  }
 }
