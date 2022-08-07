@@ -18,3 +18,4 @@ makeMenuLinkChangePage("about-page-link", "about-page");
 makeMenuLinkChangePage("media-page-link", "media-page");
 makeMenuLinkChangePage("faq-page-link", "faq-page");
 makeMenuLinkChangePage("contact-page-link", "contact-page");
+makeMenuLinkChangePage("suppliers-page-link", "suppliers-page");
