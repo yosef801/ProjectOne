@@ -66,13 +66,14 @@ body {
   border: #f2f2f2 solid 1px;
   margin: 5px;
   font: bold;
+  text-align: left;
 }
 .titleInfi {
   font-size: 1.25rem;
   color: #f2f2f2;
 }
-.titleInfi span {
-  margin: 2px;
+.titleInfi div {
+  padding: 5px;
 }
 span.yello {
   color: #0d0d0d;
@@ -98,4 +99,7 @@ footer {
 #suppliers-page-link {
   border-top-right-radius: 13px;
   border-bottom-right-radius: 13px;
+}
+.titleInfi h4 {
+  display: inline;
 }
