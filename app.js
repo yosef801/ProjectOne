@@ -50,6 +50,8 @@ function faqfun(faqID, faqToShow) {
     document.getElementById(faqToShow).classList.remove("d-none");
     if (faqcurrentID == faqToShow) {
       document.getElementById(faqToShow).classList.add("d-none");
+      faqcurrentID = "null";
+      return 0;
     }
     faqcurrentID = faqToShow;
   });
@@ -57,3 +59,44 @@ function faqfun(faqID, faqToShow) {
 faqfun("faqONE", "qONE");
 faqfun("faqTWO", "qTWO");
 faqfun("faqTHREE", "qTHREE");
+faqfun("faqFOUR", "qFOUR");
+faqfun("faqFIVE", "qFIVE");
+faqfun("faqSIX", "qSIX");
+faqfun("faqSEVEN", "qSEVEN");
+faqfun("faqEIGHT", "qEIGHT");
+faqfun("faqNINE", "qNINE");
+faqfun("faqTEN", "qTEN");
+
+document.getElementById("btn").addEventListener("click", function () {
+  const email = document.getElementById("email");
+  if (email.value == "" || email.value.indexOf("@") == -1) {
+    email.value = "Enter a valid email address";
+    email.style.color = "red";
+    $("#prospects_form").submit(function (e) {
+      e.preventDefault();
+    });
+  }
+});
+
+var suppliersCurrentID = "walkOne";
+function suppliersChangePage(suppliersID, suppliersToShow) {
+  const suppliersPage = document.getElementById(suppliersID);
+  suppliersPage.addEventListener("click", function () {
+    console.log("suppliers");
+    if (suppliersCurrentID == suppliersToShow) {
+      return 0;
+    }
+    document.getElementById(suppliersToShow).classList.remove("d-none");
+    document.getElementById(suppliersCurrentID).classList.add("d-none");
+
+    suppliersCurrentID = suppliersToShow;
+  });
+}
+suppliersChangePage("walkOneLink", "walkOne");
+suppliersChangePage("sheartonMallLink", "sheartonMall");
+suppliersChangePage("aceHotelLink", "aceHotel");
+suppliersChangePage("ritzHotelLink", "ritzHotel");
+suppliersChangePage("premiumParkLink", "premiumPark");
+suppliersChangePage("lCMMLink", "lCMM");
+suppliersChangePage("deathMuseumLink", "deathMuseum");
+suppliersChangePage("hauntedMuseumLink", "hauntedMuseum");

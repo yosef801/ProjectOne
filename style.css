@@ -257,8 +257,73 @@ a.lightbox-close:after {
 }
 #faq-page h2:hover {
   cursor: pointer;
+  text-shadow: 1px 1px;
+  color: #f2cc0f;
 }
-#faq-page span {
+#faq-page span,
+#contact-page label {
   font-size: 1.2rem;
   color: #9453a6;
+}
+#contact-page {
+  text-align: left;
+  margin-left: 8px;
+}
+#inputFREE {
+  height: 50px;
+  width: 300px;
+  text-align: justify;
+}
+#suppliers-page {
+  margin-left: 15px;
+}
+#suppliers-page img {
+  width: 150px;
+  height: 150px;
+  margin: 15px 15px 15px 0px;
+}
+.gridSuppliers {
+  display: grid;
+  grid-template-columns: auto auto auto auto auto auto auto auto;
+}
+/* #suppliers-page .gridSection {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 20% 60% 20%;
+}
+aside img {
+  width: 200px !important;
+  height: 500px !important;
+  margin: 0 !important;
+  text-align: left;
+}
+ */
+.boxInfoHotel {
+  width: 60%;
+  padding: 25px;
+  border: solid #f2f2f2 2px;
+}
+#sheartonMall,
+#walkOne,
+#aceHotel {
+  text-align: left;
+  /*  background-image: url(./imgs/shop2/aside1.webp); */
+  color: #0d0d0d;
+  padding: 5px;
+}
+.imgSuppliers {
+  width: 500px !important;
+  height: 500px !important;
+  float: right;
+}
+.buttonToTheSite {
+  border: solid #9453a6 1px;
+  background-color: #9453a6;
+  color: #f2f2f2;
+  text-decoration: none;
+  border-radius: 12px;
+  padding: 10px;
+}
+.buttonToTheSite:hover {
+  color: #8cbf3f;
 }
