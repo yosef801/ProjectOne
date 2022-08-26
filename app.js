@@ -42,6 +42,7 @@ function mediaPMV(mediaID, mediaToShow) {
 mediaPMV("mediaPM", "divPhotos");
 mediaPMV("mediaPV", "divVideos");
 
+//FAQ function
 var faqcurrentID = "null";
 function faqfun(faqID, faqToShow) {
   const faqPAGEtoSHOW = document.getElementById(faqID);
@@ -78,7 +79,7 @@ document.getElementById("btn").addEventListener("click", function () {
   }
 });
 
-var suppliersCurrentID = "walkOne";
+/* var suppliersCurrentID = "walkOne";
 function suppliersChangePage(suppliersID, suppliersToShow) {
   const suppliersPage = document.getElementById(suppliersID);
   suppliersPage.addEventListener("click", function () {
@@ -99,4 +100,4 @@ suppliersChangePage("ritzHotelLink", "ritzHotel");
 suppliersChangePage("premiumParkLink", "premiumPark");
 suppliersChangePage("lCMMLink", "lCMM");
 suppliersChangePage("deathMuseumLink", "deathMuseum");
-suppliersChangePage("hauntedMuseumLink", "hauntedMuseum");
+suppliersChangePage("hauntedMuseumLink", "hauntedMuseum"); */

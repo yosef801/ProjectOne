@@ -4,6 +4,9 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Mardi Gras New Orleans</title>
+        <link rel="stylesheet"
+          href="https://fonts.googleapis.com/css?family=Pattaya">
+
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -14,9 +17,9 @@
     <link rel="icon" type="image/x-icon" href="./index.png" />
   </head>
   <body>
-    <nav class="navbar navbar-expand-lg bg-light">
+    <nav class="navbar navbar-expand-lg bg-light navBarClassBackground">
       <img id="logoNavBar" src="./index.png" width="60" height="60" alt="" />
-      <div class="container-fluid">
+      <div class="container-fluid navBarClassBackground">
         <button
           class="navbar-toggler"
           type="button"
@@ -51,7 +54,7 @@
               >Contact</a
             >
             <a id="suppliers-page-link" class="nav-link active yello" href="#"
-              >Suppliers</a
+              >Trivia</a
             >
           </div>
         </div>
@@ -665,6 +668,39 @@ Mayor of New Orleans"
           <img src="./imgs/img12.jpg" />
           <a class="lightbox-close" href="#"></a>
         </div>
+        <!--Picture13-->
+        <a class="lightbox" href="#img13">
+          <img src="./imgs/img13.jpg" />
+        </a>
+        <div class="lightbox-target" id="img13">
+          <img src="./imgs/img13.jpg" />
+          <a class="lightbox-close" href="#"></a>
+        </div>
+        <!--Picture14-->
+        <a class="lightbox" href="#img14">
+          <img src="./imgs/img14.jpg" />
+        </a>
+        <div class="lightbox-target" id="img14">
+          <img src="./imgs/img14.jpg" />
+          <a class="lightbox-close" href="#"></a>
+        </div>
+        <!--Picture15-->
+        <a class="lightbox" href="#img15">
+          <img src="./imgs/img15.jpg" />
+        </a>
+        <div class="lightbox-target" id="img15">
+          <img src="./imgs/img15.jpg" />
+          <a class="lightbox-close" href="#"></a>
+        </div>
+        <!--Picture16-->
+        <a class="lightbox" href="#img16">
+          <img src="./imgs/img16.jpg" />
+        </a>
+        <div class="lightbox-target" id="img16">
+          <img src="./imgs/img16.jpg" />
+          <a class="lightbox-close" href="#"></a>
+        </div>
+        
         <!--End of the div-->
       </div>
       <div id="divVideos" class="videoMedia d-none">
@@ -849,7 +885,7 @@ Mayor of New Orleans"
       <div class="mapSite">
         <iframe
           src="https://www.google.com/maps/d/embed?mid=14-fXt1aXOxTRsF9VqjOtzfigBD0&hl=en&ehbc=2E312F"
-          width="640"
+          width="480"
           height="480"
         ></iframe>
       </div>
@@ -860,6 +896,26 @@ Mayor of New Orleans"
     <!--  -->
 
     <div id="suppliers-page" class="d-none">
+      <span id="containerSpanTrivia">
+      <h2>Trivia!</h2>
+      <h4 id="titleTrivia">Welcome to the trivia of Mardi grass!</h4>
+      <div id="qParaBlock">
+        <span id="pTriviaSpan"> 
+        <p class="d-none" id="aTrivia1"></p>
+        <p class="d-none" id="aTrivia2"></p>
+        <p class="d-none" id="aTrivia3"></p>
+        <p class="d-none" id="aTrivia4"></p>
+       
+        </span>
+        <p class="d-none" id="colorAndAnswer"></p>
+        <p class="d-none" id="enjoyTrivia">I hope you enjoyed play this Trivia. let's meet together at the Mardi Gras. feel free to scroll and browsing the site. </p>
+         <p id="pointsTrivia"></p>
+        </span>
+      </div>
+      <button class="btn btn-outline-success" id="startNext">Start</button>
+
+      <!-- 
+    
       <div class="gridSuppliers">
         <a href="#" id="walkOneLink">
           <img src="./logo1.svg" />
@@ -890,7 +946,7 @@ Mayor of New Orleans"
         </a>
       </div>
       <hr />
-      <!--Walk One-->
+      
       <div id="walkOne">
         <h2>Walk-On's Bistreaux and Bar</h2>
         <img class="imgSuppliers" src="./imgs/walkoneimg.jpg" alt="" />
@@ -922,7 +978,7 @@ Mayor of New Orleans"
           >
         </div>
       </div>
-      <!--Sheart Mall-->
+      
       <div class="d-none gridSection" id="sheartonMall">
         <span>
           <h2>Sheraton New Orleans Hotel</h2>
@@ -973,7 +1029,7 @@ Mayor of New Orleans"
         </span>
       </div>
 
-      <!--Ace Hotel-->
+      
       <div class="d-none" id="aceHotel">
         <span>
           <h2>Ace Hotel</h2>
@@ -1013,7 +1069,7 @@ Mayor of New Orleans"
         </span>
       </div>
 
-      <!--The Ritz-Carlton Hotel-->
+      
       <div class="d-none" id="ritzHotel">
         <iframe
           src="https://www.ritzcarlton.com/en/hotels/new-orleans"
@@ -1024,21 +1080,23 @@ Mayor of New Orleans"
         </iframe>
       </div>
 
-      <!--Premium Park-->
+      Premium Park
       <div class="d-none" id="premiumPark">Premium Park</div>
 
-      <!--LCM-->
+      LCM
       <div class="d-none" id="lCMM">LCM</div>
 
-      <!--death museum-->
+      death museum
       <div class="d-none" id="deathMuseum">Museum of Death</div>
 
-      <!--Haunted Museum-->
+      Haunted Museum
       <div class="d-none" id="hauntedMuseum">Haunted Museum</div>
+    -->
 
       <!--Grid suplliers end if the div-->
 
-      <!--The end of the Page Suppliers (end div)-->
+
+      <!--The end of the Page Trivia (end div)-->
     </div>
 
     <!--Footer-->
@@ -1050,5 +1108,6 @@ Mayor of New Orleans"
       crossorigin="anonymous"
     ></script>
     <script src="app.js"></script>
+    <script src="trivia.js"></script>
   </body>
 </html>

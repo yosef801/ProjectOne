@@ -3,6 +3,11 @@ body {
   background-color: #f2f2f2;
 }
 
+.navBarClassBackground {
+  background-color: #f2f2f2 !important;
+  font-family: "Pattaya";
+}
+
 .pepe {
   background-color: #9453a6 !important;
 }
@@ -139,7 +144,7 @@ a.lightbox img {
   height: 150px;
   border: 3px solid white;
   box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
-  margin: 10px 10px 10px 10px;
+  /* margin: 10px 10px 10px 10px; */
 }
 
 .lightbox-target {
@@ -326,4 +331,57 @@ aside img {
 }
 .buttonToTheSite:hover {
   color: #8cbf3f;
+}
+
+/*  style of the Trivia: */
+
+#pTriviaSpan p {
+  margin: 3px auto;
+  border: 1px solid black;
+  width: 400px;
+  background-color: #9453a6;
+  color: #f2f2f2;
+  font-size: 18px;
+}
+
+#pTriviaSpan p:hover {
+  cursor: pointer;
+  background-color: #8cbf3f;
+  color: #0d0d0d;
+  font-size: 22px;
+}
+.correctGreen {
+  color: #537c15;
+  background-color: #c8e4b5;
+}
+.wrongRed {
+  color: red;
+  background-color: rgb(121, 65, 65);
+}
+#colorAndAnswer {
+  width: 400px;
+  border: 1px solid #c8e4b5;
+  margin: 3px auto;
+  font-size: 18px;
+}
+#containerSpanTrivia h2 {
+  font-size: 45px;
+  font-style: italic;
+}
+#titleTrivia {
+  font-size: 35px;
+  font-style: italic;
+}
+#pointsTrivia {
+  width: 400px;
+  margin: 15px auto;
+  background-color: #f2cc0f;
+  font-size: 22px;
+  border-radius: 15px;
+}
+#enjoyTrivia {
+  font-size: 22px;
+  width: 400px;
+  margin: 2px auto;
+  font-style: italic;
 }
